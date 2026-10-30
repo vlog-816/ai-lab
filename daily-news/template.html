@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bản tin 30/10/2026 · Morning brief</title>
+<style>
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--ink:#F4F4FB;--soft:rgba(238,238,250,.74);--acc:#8FD9FF;--wx-b:rgba(140,196,245,.16);--wx-t:#8CC4F5;--it-b:rgba(181,171,255,.16);--it-t:#B5ABFF;--ent-b:rgba(255,158,196,.16);--ent-t:#FF9EC4;--world-b:rgba(125,221,170,.16);--world-t:#7DDDAA;--vn-b:rgba(255,184,119,.16);--vn-t:#FFB877}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;color:var(--ink);font:15px/1.55 -apple-system,"Segoe UI",sans-serif}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:#0D0D1F;background:radial-gradient(120% 100% at 50% 30%,oklch(0.24 0.06 285),oklch(0.11 0.03 270) 72%)}
+.lights{position:absolute;inset:0;animation:hue 60s linear infinite}
+@keyframes hue{to{filter:hue-rotate(360deg)}}
+.lights span{position:absolute;left:var(--x);top:var(--y);width:calc(56px + var(--d)*200px);aspect-ratio:1;border-radius:50%;translate:-50% -50%;mix-blend-mode:screen;filter:blur(calc(2px + var(--d)*24px));opacity:calc(.86 - var(--d)*.42);background:radial-gradient(circle,oklch(1 0 0/.92) 0 16%,oklch(0.78 0.17 var(--h)/.78) 38% 70%,oklch(0.6 0.2 var(--h)/.3) 76%,transparent 80%);animation:rise calc(52s - var(--d)*30s) ease-in-out infinite alternate,sway calc(31s - var(--d)*14s) ease-in-out infinite alternate,pulse calc(9s + var(--d)*7s) ease-in-out infinite alternate}
+@keyframes rise{from{translate:-50% -20%}to{translate:-50% -86%}}
+@keyframes sway{from{margin-left:-5vmin}to{margin-left:6vmin}}
+@keyframes pulse{from{scale:.9}to{scale:1.12}}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:13px;letter-spacing:.2em;color:var(--acc)}
+.tabs span{padding:5px 12px;border-radius:99px;margin-left:6px;background:rgba(255,255,255,.12);letter-spacing:.04em}
+h1{font:600 46px/1.08 Georgia,serif;margin:28px 0 8px;letter-spacing:-.02em}
+.lead{margin:0;color:var(--soft);max-width:560px}
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.stat{background:rgba(14,14,34,.55);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:12px 18px;min-width:150px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.stat small{display:block;color:var(--soft);font-size:12px}
+.stat strong{font-size:22px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;padding:26px 0 8px}
+.bar button{font:500 13px -apple-system,"Segoe UI",sans-serif;border:1px solid rgba(255,255,255,.18);background:rgba(14,14,34,.5);color:var(--ink);padding:7px 14px;border-radius:99px;cursor:pointer;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.bar button.on{background:var(--acc);border-color:var(--acc);color:#101026}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:8px 0 48px}
+.card{background:rgba(14,14,34,.55);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:18px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 30px 60px -40px rgba(0,0,0,.9)}
+.tag{display:inline-block;background:rgba(255,255,255,.12);color:var(--acc);font:600 11px ui-monospace,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;border-radius:99px}
+.card h3{font-size:17px;line-height:1.3;margin:10px 0 2px}
+.card h4{font-size:14px;font-weight:400;color:var(--soft);margin:0 0 8px}
+.card p{margin:4px 0;color:var(--soft);font-size:14px}
+.card a{display:inline-block;margin:8px 12px 0 0;color:var(--acc);font-size:13px;font-weight:600;text-decoration:none}
+[data-s=wx]{--pb:var(--wx-b);--pt:var(--wx-t)}[data-s=it]{--pb:var(--it-b);--pt:var(--it-t)}[data-s=ent]{--pb:var(--ent-b);--pt:var(--ent-t)}[data-s=world]{--pb:var(--world-b);--pt:var(--world-t)}[data-s=vn]{--pb:var(--vn-b);--pt:var(--vn-t)}
+.card[data-s]{background:linear-gradient(var(--pb),var(--pb)),rgba(14,14,34,.55)}
+.card[data-s] .tag{background:var(--pt);color:#101026}
+.card[data-s] a{color:var(--pt)}
+.bar button[data-s]{background:linear-gradient(var(--pb),var(--pb)),rgba(14,14,34,.5);color:var(--pt)}
+.bar button[data-s].on{background:var(--pt);color:#101026;border-color:var(--pt)}
+@media (max-width:640px){h1{font-size:34px}}
+@media (prefers-reduced-motion:reduce){.lights,.lights span{animation:none}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="lights"><span style="--d:0.15;--x:8%;--y:74%;--h:210"></span><span style="--d:0.85;--x:22%;--y:30%;--h:32"></span><span style="--d:0.4;--x:36%;--y:86%;--h:320"></span><span style="--d:0.62;--x:52%;--y:18%;--h:200"></span><span style="--d:0.25;--x:64%;--y:62%;--h:44"></span><span style="--d:0.95;--x:78%;--y:44%;--h:340"></span><span style="--d:0.35;--x:90%;--y:78%;--h:190"></span><span style="--d:0.7;--x:14%;--y:54%;--h:280"></span><span style="--d:0.2;--x:46%;--y:48%;--h:60"></span><span style="--d:0.5;--x:70%;--y:88%;--h:220"></span><span style="--d:0.9;--x:88%;--y:14%;--h:26"></span><span style="--d:0.3;--x:30%;--y:8%;--h:300"></span><span style="--d:0.55;--x:6%;--y:20%;--h:180"></span><span style="--d:0.12;--x:58%;--y:70%;--h:40"></span></div></div>
+<header><div class="w">
+<nav><b>BẢN TIN SÁNG · MORNING BRIEF</b><div class="tabs"><span class="on">30/10/2026</span></div></nav>
+<h1>Thứ Sáu 30/10<br>Friday, Oct 30</h1>
+<p class="lead">Đọc trong 5 phút là nắm được ngày hôm nay. A 5-minute read to start your day.</p>
+<div class="stats">
+<div class="stat"><small>TP.HCM · Weather</small><strong>32°C / 25°C</strong></div>
+<div class="stat"><small>VN-Index (29/10)</small><strong>1.755,61 · −0,62%</strong></div>
+<div class="stat"><small>Mưa / Rain</small><strong>35%</strong></div>
+</div>
+</div></header>
+<main class="w">
+<div class="bar" id="bar"></div>
+<div class="grid" id="grid"></div>
+</main>
+<script>
+var L={all:"Tất cả · All",wx:"Thời tiết · Weather",it:"IT",ent:"Giải trí · Entertainment",world:"Thế giới · World",vn:"VN-Index"};
+var G="https://theglobaleye.it/2026/10/29/global-news-29-october-2026/",D="https://www.tinnhanhchungkhoan.vn/phien-giao-dich-chieu-2810-ngan-hang-nang-do-vn-index-post400369.html";
+var I=[
+["wx", "Nhiều mây, 32°C, khả năng mưa 35%", "Cloudy at 32°C, 35% chance of rain", "Hôm nay cao 32°C, thấp 25°C. Thứ Bảy 31/10 mưa 85%, Chủ nhật 1/11 giảm còn 20%, sang tuần mới mưa trở lại (65–75%).", "Today’s high is 32°C, low 25°C. Saturday, Oct 31 has 85% rain, Sunday drops to 20%, and rain returns next week (65–75%).", []],
+["it", "Google công bố Gemini 4 Carbon nhưng hạn chế truy cập", "Google announces Gemini 4 Carbon with restricted access", "Google DeepMind giới thiệu mô hình tiên phong mới hôm 28/10, tập trung vào an ninh mạng và lập trình tầm xa. Mô hình chưa có trong danh sách của Gemini API, hiện mới có Gemini 4 Argon.", "Google DeepMind unveiled its next frontier model on Oct 28, focused on cybersecurity and long-horizon coding. It is not yet in the Gemini API model list, which currently shows only Gemini 4 Argon.", [["OrcaRouter", "https://orcarouter.ai/vi/blog/gemini-4-carbon-release-date"], ["HN digest (GitHub)", "https://github.com/BuhDuy256/agents-radar/issues/151"]]],
+["it", "Android Studio cho phép “mang agent riêng”, hỗ trợ hơn 40 agent", "Android Studio adds “Bring Your Own Agent” with 40+ agents", "Theo bản điểm tin AI 29/10 trên GitHub, cùng ngày Claude for Legal bổ sung xác minh nguồn trích dẫn.", "Per the Oct 29 AI digest on GitHub, Claude for Legal also added source verification the same day.", [["GitHub digest", "https://github.com/MichaelDo0101/learning-ai/pull/97"]]],
+["it", "Diễn đàn AI và Công nghệ số Việt Nam–Hàn Quốc 2026 có phiên gọi vốn startup", "Vietnam–Korea AI and Digital Tech Forum 2026 holds a startup pitching session", "Ngày 29/10, NIC và NIPA tổ chức phiên thuyết trình gọi vốn, trong đó công nghệ xanh và AI là hai mảng nổi bật.", "On Oct 29, NIC and NIPA ran an investor pitching session where green tech and AI stood out.", [["VietnamPlus", "https://www.vietnamplus.vn/cong-nghe-xanh-va-ai-chiem-song-tai-phien-goi-von-startup-viet-han-2026-post1145081.vnp"]]],
+["ent", "Tùng Dương “cháy” 15.000 vé sau 6 giờ", "Tùng Dương sells 15,000 tickets in 6 hours", "Buổi diễn tháng 12 của nam ca sĩ đã bán được 15.000 vé chỉ sau 6 tiếng mở bán.", "The singer’s December show sold 15,000 tickets within 6 hours of going on sale.", [["Việt Giải Trí", "https://vietgiaitri.com/tung-duong-chay-15000-ve-20261029i7804376"]]],
+["ent", "tlinh trở lại với “người điên NẶNG” sau 3 năm", "tlinh returns with “người điên NẶNG” after 3 years", "Đây là bản remake u tối hơn của “người điên”. Cùng đợt có Chi Pu với “Sao Em Còn” và Tăng Duy Tân với MV “Cô Bé Ơi”.", "A darker remake of “người điên”. The same release wave includes Chi Pu’s “Sao Em Còn” and Tăng Duy Tân’s “Cô Bé Ơi” MV.", [["Kenh14", "https://kenh14.vn/chuyen-gi-dang-xay-ra-voi-nhac-viet-ngay-28-10-215261028130646253.chn"]]],
+["ent", "Linh Rin dự buổi nghe nhạc album TWINFLAME của Emily", "Linh Rin attends Emily’s TWINFLAME listening party", "Linh Rin hiếm hoi lộ diện tại sự kiện ra mắt album mới của cô bạn thân.", "Linh Rin made a rare appearance at her close friend’s new-album listening party.", [["Việt Giải Trí", "https://vietgiaitri.com/dung-20h-hom-nay-ngay-29102026-3-con-giap-nhan-phuc-phan-troi-ban-tien-xep-chat-vi-cu-voi-lai-day-tha-ho-song-huong-thu-20261029i7804708"]]],
+["world", "Fed giữ nguyên lãi suất", "The Fed holds interest rates", "Sau quyết định của Cục Dự trữ liên bang Mỹ, chứng khoán Việt Nam sáng 29/10 chưa phản ứng rõ nét và giao dịch thận trọng.", "After the US Federal Reserve’s decision, Vietnam’s stock market showed no clear reaction on the morning of Oct 29 and traded cautiously.", [["BNEWS", "https://bnews.vn/chung-khoan-29-10-dau-khi-lao-doc-vn-index-mat-hon-11-diem/442387.html"]]],
+["world", "Kỳ vọng đầu tư AI gây áp lực lên chứng khoán châu Á", "AI investment hopes weigh on Asian stocks", "Chứng khoán châu Á phân hóa ngày 29/10 vì lợi nhuận trái chiều của các tập đoàn công nghệ lớn. Cổ phiếu AI Trung Quốc mất giá nhanh cũng khiến giới đầu tư lo ngại.", "Asian stocks diverged on Oct 29 as big tech earnings were mixed. A fast sell-off in Chinese AI stocks is also worrying investors.", [["Báo Tin Tức", "https://baotintuc.vn/diem-tin-kinh-te-viet-nam-noi-bat-ngay-29102026-post1398470.html"], ["Thanh Niên", "https://thanhnien.vn/tin-tuc-dac-biet-tren-bao-in-thanh-nien-29102026-185261028222250285.htm"]]],
+["world", "Giá dầu thế giới bật tăng mạnh, vàng miếng trong nước sát 143 triệu đồng/lượng", "World oil rebounds sharply; domestic gold bars near VND 143 million per tael", "Bản tin thị trường 29/10 ghi nhận giá dầu đảo chiều tăng mạnh, trong khi giá vàng miếng trong nước tiến sát mốc 143 triệu đồng mỗi lượng.", "The Oct 29 market note reports oil reversing sharply higher while domestic gold bars approached VND 143 million per tael.", [["VOH", "https://voh.com.vn/kinh-te/bat-song-thi-truong-29102026-vang-mieng-cham-143-trieu-dongluong-gia-dau-the-gioi-tang-676335.html"]]],
+["vn", "VN-Index giảm 11,04 điểm (−0,62%) xuống 1.755,61", "VN-Index falls 11.04 points (−0.62%) to 1,755.61", "Toàn sàn có 97 mã tăng, 215 mã giảm; thanh khoản HoSE hơn 14.500 tỷ đồng. Các mã HPG, VPL, GVR, BID, DMX góp khoảng 2,64 điểm tích cực.", "97 advancers vs 215 decliners; HoSE turnover above VND 14.5 trillion. HPG, VPL, GVR, BID and DMX added about 2.64 points.", [["BNEWS", "https://bnews.vn/chung-khoan-29-10-dau-khi-lao-doc-vn-index-mat-hon-11-diem/442387.html"], ["Nhân Dân", "https://nhandan.vn/chung-khoan-ngay-2910-sac-do-lan-rong-vn-index-giam-hon-11-diem-post998754.html"]]],
+["vn", "Cổ phiếu dầu khí lao dốc, PVT giảm sàn 6,78%", "Oil and gas stocks slump, PVT hits the limit-down at 6.78%", "Nhóm dầu khí chịu áp lực bán mạnh với nhiều mã giảm sâu, kéo cả ba sàn HoSE, HNX và UPCoM giảm điểm.", "Heavy selling hit oil and gas names, dragging all three exchanges (HoSE, HNX, UPCoM) lower.", [["Hà Nội Mới", "https://hanoimoi.vn/chung-khoan-ngay-29-10-co-phieu-dau-khi-lao-doc-vn-index-mat-hon-11-diem-1763387.html"]]],
+["vn", "Khối ngoại bán ròng hơn 455 tỷ đồng, VPB dẫn đầu chiều mua ròng", "Foreigners net-sell over VND 455B; VPB leads net buying", "Trên HoSE khối ngoại bán ròng chủ yếu TCB và FPT, còn VPB được mua ròng nhiều nhất, khoảng 83 tỷ đồng.", "On HoSE foreigners sold mainly TCB and FPT, while VPB saw the biggest net buying at about VND 83 billion.", [["Hà Nội Mới", "https://hanoimoi.vn/chung-khoan-ngay-29-10-co-phieu-dau-khi-lao-doc-vn-index-mat-hon-11-diem-1763387.html"], ["CafeF", "https://cafef.vn/phien-29-10-khoi-ngoai-tiep-da-ban-rong-hon-400-ty-dong-giao-dich-trai-chieu-tai-2-co-phieu-ngan-hang-188261029153630226.chn"]]]
+];
+var bar=document.getElementById("bar"),grid=document.getElementById("grid");
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
+I.forEach(function(i){var c=el("article","card");c.dataset.s=i[0];c.appendChild(el("span","tag",L[i[0]]));c.appendChild(el("h3","",i[1]));c.appendChild(el("h4","",i[2]));c.appendChild(el("p","",i[3]));c.appendChild(el("p","",i[4]));i[5].forEach(function(a){var l=el("a","","Nguồn / Source: "+a[0]);l.href=a[1];c.appendChild(l)});grid.appendChild(c)});
+Object.keys(L).forEach(function(k){var b=el("button",k=="all"?"on":"",L[k]);if(k!="all")b.dataset.s=k;b.onclick=function(){[].forEach.call(bar.children,function(x){x.classList.remove("on")});b.classList.add("on");[].forEach.call(grid.children,function(c){c.style.display=(k=="all"||c.dataset.s==k)?"":"none"})};bar.appendChild(b)});
+</script>
+</body>
+</html>
