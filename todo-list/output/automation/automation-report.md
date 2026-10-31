@@ -1,16 +1,16 @@
-# Automation Test Report
+# Playwright Automation Report
 
 ## Summary
 
-- **Target:** TodoMVC React (`https://todomvc.com/examples/react/dist/`)
-- **Date:** 2026-10-31
-- **Browser:** Chromium, using the repository Playwright configuration.
-- **Total scripts:** 8
-- **Passed:** 8
+- **Script files:** 1
+- **Automated test cases:** 9
+- **Passed:** 9
 - **Failed:** 0
 - **Skipped:** 0
+- **Command:** `npx playwright test`
+- **Final run:** 9 passed
 
-## Mapping
+## Test case mapping
 
 | Test Case ID | Script file | Test name | Run result |
 |---|---|---|---|
@@ -22,18 +22,23 @@
 | TC-06 | `tests/todo-list.spec.ts` | TC-06: Filter completed todos | Passed |
 | TC-07 | `tests/todo-list.spec.ts` | TC-07: Show all todos | Passed |
 | TC-08 | `tests/todo-list.spec.ts` | TC-08: Toggle all todos | Passed |
+| TC-09 | `tests/todo-list.spec.ts` | TC-09: Delete one test todo | Passed |
 
 ## Cases not automated
 
-None of the eight approved passing manual cases were skipped. Delete and Clear completed were not in the approved manual plan and were not automated because they remove todo data.
+None. All nine manual cases were marked Pass and were suitable for UI automation.
 
 ## Failures, suspected causes, and recommendations
 
-- The first run had one script failure in TC-02: the locator counted the filter navigation links along with todo rows. The assertion was corrected to scope to the main list; the final run passed all 8 tests.
-- No application failures were observed in the final run.
-- **Recommendation:** Rerun the suite when the target application or supported browser versions change. Consider persistence and destructive-action cases only if they are explicitly added to scope.
+- **Final run:** No failures.
+- **Initial run:** TC-06 initially failed on an additional assertion for the remaining-item count in the Completed view. The manual case did not require a count there, and the UI did not expose that element in the view. The unsupported assertion was removed; the final run passed. This was an automation-script expectation mismatch, not an identified application defect.
+- **Recommendation:** The manual run observed that sample todos disappeared after reload, but persistence requirements are unspecified. Clarify the expected behavior and add a dedicated reload-persistence case if it is in scope.
+- **Observation:** The manual run reported an aborted Google Analytics request (`net::ERR_ABORTED`); TodoMVC operations remained usable.
 
-## Skills used
+## Skills used by phase
 
-- `playwright-best-practices`: applied user-facing role/text locators, isolated tests, and web-first assertions.
-- `playwright-cli`: not used; the recorded manual results supplied the observed UI controls, and the configured Playwright test runner was used for execution.
+- **Phase 1 – Select:** `agent-customization`
+- **Phase 2 – Write scripts:** `playwright-best-practices`
+- **Phase 3 – Run:** `playwright-best-practices`
+- **Phase 4 – Report:** None
+- `playwright-cli` was not used; the recorded manual results and screenshots provided the locators needed.
