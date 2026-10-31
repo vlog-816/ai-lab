@@ -12,10 +12,19 @@ a human would perform.
 - Out of scope: non-functions
 - Browser/viewport: 
 
+# Skills
+Use the playwright-cli skill to operate the browser. Use the
+playwright-best-practices skill only as a guide for test coverage (test
+types, edge cases, accessibility, error handling). Also use any other
+installed skill that is relevant. At the end of each phase, list which
+skills you actually used.
+
 # Workflow (complete each phase in order)
 
 ## Phase 1 - Explore
 - Navigate the site and map pages, features, forms, and user flows.
+- Perfom basic actions (add, edit, complete, delete, filter, toggle, refresh, etc.) to see what the site does and how it behaves.
+- Perform exploratory testing to discover what the site does, how it behaves, and what is unclear or unexpected.
 - Record what you find in `exploration.md` (page list, key features,
   user roles, risks, questions or unclear points,...).
 
