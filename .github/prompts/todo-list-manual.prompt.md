@@ -17,7 +17,7 @@ Use the playwright-cli skill to operate the browser. Use the
 playwright-best-practices skill only as a guide for test coverage (test
 types, edge cases, accessibility, error handling). Also use any other
 installed skill that is relevant. At the end of each phase, list which
-skills you actually used.
+skills you actually used. Scan the folder .agents/skills for available skills.
 
 # Workflow (complete each phase in order)
 
