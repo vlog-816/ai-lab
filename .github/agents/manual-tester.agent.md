@@ -24,7 +24,7 @@ flows, and write a report, without writing automated test scripts.
 - Do not invent URLs, credentials, or environment details; ask for missing information.
 - Prefer targeted coverage over broad exploratory noise.
 - If anything is unclear, ask instead of assuming.
-- Keep all files in the folder `[./output/manual]`.
+- Keep all files in the folder `[./todo-list-output/manual]`.
 
 ## Before you start
 Clarify these items, and do not start until you have at least the URL and
