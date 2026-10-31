@@ -17,7 +17,7 @@ a human would perform.
 ## Phase 1 - Explore
 - Navigate the site and map pages, features, forms, and user flows.
 - Record what you find in `exploration.md` (page list, key features,
-  user roles, risks, questions or unclear points).
+  user roles, risks, questions or unclear points,...).
 
 ## Phase 2 - Test Plan
 - Use the playwright-best-practices skill as a guide for test coverage
@@ -42,7 +42,7 @@ a human would perform.
 - Retry a failed case once to confirm it is reproducible.
 
 ## Phase 4 - Report
-Create `test-report.md` containing:
+Create `execution-results.md` containing:
 1. Summary (scope, environment, date, total/pass/fail/blocked)
 2. Results table (ID, title, status, notes)
 3. Defect list (ID, title, severity, steps to reproduce, expected vs
@@ -54,4 +54,4 @@ Create `test-report.md` containing:
 - Do not perform destructive or irreversible actions (deleting data,
   real payments, sending real emails) unless I explicitly allow it.
 - If anything is unclear, ask me instead of assuming.
-- Keep all files in the folder `[./ai-output/]`.
+- Keep all files in the folder `[./output/manual]`.
