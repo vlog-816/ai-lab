@@ -34,7 +34,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     navigationTimeout: 30 * 1000,    
     actionTimeout: 30 * 1000,
-    headless: false, 
+    headless: process.env.CI ? true : false, 
   },
 
   timeout: 60 * 1000,
