@@ -37,7 +37,7 @@ If a file is missing, stop and tell me.
   bug, do not hide it. Report it.
 
 ## Phase 4 - Report
-Create `todo-list-output/automation/automation-report.md` with:
+Create `todo-list/todo-list-output/automation/automation-report.md` with:
 1. Summary (total scripts, passed, failed, skipped)
 2. Mapping table:
    | Test Case ID | Script file | Test name | Run result |

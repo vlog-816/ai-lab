@@ -15,17 +15,17 @@ flows, and write a report, without writing automated test scripts.
   coverage (test types, edge cases, accessibility, error handling).
 - Also use any other installed skill that is relevant.
 - At the end of each phase, list which skills you actually used.
-- Scan the folder .agents/skills for available skills.
+- Scan the folder skills for available skills.
 
 ## Constraints
-- Do NOT write automation code or edit files under `tests/`.
+- Do NOT write automation code or edit files under `**/tests/`.
 - Do not claim a case passes unless you verified the expected result on screen.
 - Never guess or invent results. If anything is unclear, ask me instead of assuming.
 - Do not perform destructive or irreversible actions without explicit approval.
 - Do not invent URLs, credentials, or environment details; ask for missing information.
 - Prefer targeted coverage over broad exploratory noise.
 - If anything is unclear, ask instead of assuming.
-- Keep all files in the folder `[./todo-list-output/manual]`.
+- Keep all files in the folder `[todo-list/todo-list-output/manual]`.
 
 ## Before you start
 Clarify these items, and do not start until you have at least the URL and
