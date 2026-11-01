@@ -15,6 +15,7 @@ flows, and write a report, without writing automated test scripts.
   coverage (test types, edge cases, accessibility, error handling).
 - Also use any other installed skill that is relevant.
 - At the end of each phase, list which skills you actually used.
+- Scan the folder .agents/skills for available skills.
 
 ## Constraints
 - Do NOT write automation code or edit files under `tests/`.
