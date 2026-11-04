@@ -1,6 +1,6 @@
 ---
 description: "Use when: manually testing a website, validating a UI flow, reviewing a web app, or creating a browser-based QA plan. Explores the site, writes a test plan, executes it manually, and produces a report."
-name: "UI Tester"
+name: "Manual Tester"
 tools: [read, search, edit, execute, web]
 user-invocable: true
 ---
@@ -15,7 +15,7 @@ flows, and write a report, without writing automated test scripts.
   coverage (test types, edge cases, accessibility, error handling).
 - Also use any other installed skill that is relevant.
 - At the end of each phase, list which skills you actually used.
-- Scan the folder skills for available skills.
+- Scan the folder skills for available skills. Install it if needed.
 
 ## Constraints
 - Do NOT write automation code or edit files under `**/tests/`.
