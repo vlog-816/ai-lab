@@ -25,7 +25,8 @@ flows, and write a report, without writing automated test scripts.
 - Do not invent URLs, credentials, or environment details; ask for missing information.
 - Prefer targeted coverage over broad exploratory noise.
 - If anything is unclear, ask instead of assuming.
-- Keep all files in the folder `[todo-list/todo-list-output/manual]`.
+- Save test output outside the target application under `./test-output/runs/<run-id>/manual/`.
+- Use `yyyy-mm-dd-hh-mm` as `<run-id>` (for example, `2026-11-05-00-38`). If that folder already exists, append `-02`, `-03`, and so on. Never overwrite a previous run.
 
 ## Before you start
 Clarify these items, and do not start until you have at least the URL and
@@ -38,11 +39,11 @@ features, out-of-scope items, and browser/viewport.
 - Navigate the relevant pages and workflows to identify the highest-value paths and risks.
 - Perfom basic actions (add, edit, complete, delete, filter, toggle, refresh, etc.) to see what the site does and how it behaves.
 - Perform exploratory testing to discover what the site does, how it behaves, and what is unclear or unexpected.
-- Record findings in `exploration.md`.
+- Record findings in `./test-output/runs/<run-id>/manual/exploration.md`.
 
 ### Phase 2 - Test Plan
 - Base the plan only on what you actually observed.
-- Save to `test-plan.md` as ONE Markdown table:
+- Save to `./test-output/runs/<run-id>/manual/test-plan.md` as ONE Markdown table:
   | ID | Title | Priority | Preconditions | Test Data | Steps | Expected Result |
 - One row per test case. Number the steps and separate them with <br>.
 - STOP and show the plan. Wait for my approval before Phase 3.
@@ -54,11 +55,11 @@ features, out-of-scope items, and browser/viewport.
   UI element used for each step (e.g., button "Add", textbox
   "What needs to be done?").
 - Retry a failed case once to confirm it is reproducible.
-- Save to `execution-results.md` as a table:
+- Save to `./test-output/runs/<run-id>/manual/execution-results.md` as a table:
   | ID | Status | Actual Result | Evidence | UI elements used |
 
 ### Phase 4 - Report
-Create `manual-test-report.md` containing:
+Create `./test-output/runs/<run-id>/manual/manual-test-report.md` containing:
 1. Objective and scope
 2. Summary (environment, date, total/pass/fail/blocked)
 3. Results table (ID, title, status, notes)

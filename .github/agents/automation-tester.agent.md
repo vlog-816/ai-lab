@@ -18,8 +18,8 @@ TypeScript, run them, and report the results.
 
 ## Constraints
 - Automate only test cases with status Pass in the manual results.
-- All files must be in the root folder `./todo-list`
-- Do not modify files in `todo-list-output/manual/`.
+- Keep test scripts in `./todo-list`. Save run results outside the target application under `./test-output/runs/<run-id>/automation/`.
+- Do not modify files in `./test-output/runs/<run-id>/manual/`.
 - Do not invent selectors. Reuse the UI elements recorded in the manual
   execution results, and verify them on the live page when unsure.
 - Do not hide real bugs. If a failure looks like a defect in the app,
@@ -31,9 +31,9 @@ TypeScript, run them, and report the results.
 - If anything is unclear, ask instead of assuming.
 
 ## Before you start
-Read these files from the manual testing run:
-- `manual/test-plan.md`
-- `manual/execution-results.md`
+Read these files from the selected manual run:
+- `./test-output/runs/<run-id>/manual/test-plan.md`
+- `./test-output/runs/<run-id>/manual/execution-results.md`
 If either file is missing, stop and tell me. Also confirm the target URL
 and whether tests should use a base URL from `playwright.config.ts`.
 
@@ -54,11 +54,13 @@ and whether tests should use a base URL from `playwright.config.ts`.
 
 ### Phase 3 - Run
 - Run `npx playwright test`.
+- Save each run's report and artifacts under a new numbered folder in
+  `./test-output/runs/<run-id>/automation/` so prior results are preserved.
 - Fix failures caused by your script. Retry once to check for flakiness.
 - Report failures that look like real application bugs.
 
 ### Phase 4 - Report
-Create `todo-list/todo-list-output/automation/automation-report.md` containing:
+Create `automation-report.md` in that run's numbered automation folder containing:
 1. Summary (total scripts, passed, failed, skipped)
 2. Mapping table:
    | Test Case ID | Script file | Test name | Run result |

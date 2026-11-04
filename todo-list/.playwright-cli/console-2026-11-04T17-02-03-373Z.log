@@ -1,0 +1,3 @@
+[    1435ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://vlog-ai-powered-assistant.vercel.app/login:0
+[   13599ms] [ERROR] Access to XMLHttpRequest at 'https://ai-powered-ta-be.vercel.app/auth/login' from origin 'https://vlog-ai-powered-assistant.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://vlog-ai-powered-assistant.vercel.app/login:0
+[   13602ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://ai-powered-ta-be.vercel.app/auth/login:0
